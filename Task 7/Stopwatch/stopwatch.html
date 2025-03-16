@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer & Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Timer & Stopwatch</h1>
+        <div class="timer-display">00:00:00</div>
+        <div class="controls">
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+        </div>
+        <div class="mode-switch">
+            <label>
+                <input type="radio" name="mode" value="stopwatch" checked> Stopwatch
+            </label>
+            <label>
+                <input type="radio" name="mode" value="timer"> Timer
+            </label>
+        </div>
+        <div id="timer-inputs">
+            <input type="number" id="hours" placeholder="HH" min="0">
+            <input type="number" id="minutes" placeholder="MM" min="0" max="59">
+            <input type="number" id="seconds" placeholder="SS" min="0" max="59">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
